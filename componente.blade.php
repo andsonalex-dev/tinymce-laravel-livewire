@@ -1,10 +1,10 @@
    <div wire:ignore>
-                                <label for="about" class="block text-sm font-medium text-gray-700">
-                                    Sobre:
-                                </label>
-                                <div class="mt-1">
-                                    <textarea id="about" wire:model="about"  wire:key="about" rows="20" class="about "  x-data
-                                    x-ref="page_text"
+     <label for="about" class="block text-sm font-medium text-gray-700">
+        Sobre:
+      </label>
+      <div class="mt-1">
+          <textarea id="about" wire:model="about"  wire:key="about" rows="20" class="about "  x-data
+                                    x-ref="about"
                                     x-init="
                                             tinymce.init({
                                                 path_absolute: '/',
@@ -30,10 +30,10 @@
                                                           },
                                                           });
                                                          "></textarea>
-                                </div>
-                            </div>
-                            <div class="error-message">
-                                @error('about')
-                                    {{ $message }}
-                                @enderror
-                            </div>
+            </div>
+         </div>
+<div class="error-message">
+       @error('about')
+          {{ $message }}
+        @enderror
+</div>
